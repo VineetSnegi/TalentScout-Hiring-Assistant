@@ -22,8 +22,16 @@
 - [Installation](#installation)
 - [Usage Guide](#usage-guide)
 - [Architecture](#architecture)
-- [Deployment](#deployment)
-- [Documentation](#documentation)
+- [Technical Architecture](#technical-architecture)
+- [Prompt Engineering](#prompt-engineering)
+- [Bonus Features Implemented](#bonus-features-implemented)
+- [Data Privacy & Security](#data-privacy--security)
+- [Code Quality Standards](#code-quality-standards)
+- [Challenges & Solutions](#challenges--solutions)
+- [Development Approach](#development-approach)
+- [Future Enhancements](#future-enhancements)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 

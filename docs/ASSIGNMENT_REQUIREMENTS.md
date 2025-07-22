@@ -259,13 +259,21 @@ Successfully collects all required candidate details:
 - Conversation stage tracking and management
 
 ### Q: What challenges were faced and how were they solved?
-**A**: Key challenges and solutions:
-1. **Context Management**: Implemented session state with conversation history
-2. **Dynamic Question Generation**: Created flexible prompt templates with tech-specific banks
-3. **Data Privacy**: Local storage with encryption and GDPR compliance
-4. **User Experience**: Professional UI with clear interaction flow
-5. **Performance**: Caching system and async processing
-6. **Deployment**: Multi-platform deployment with Docker and cloud scripts
+### Challenge 1: Context Management
+**Problem**: Maintaining conversation context across multiple exchanges
+**Solution**: Implemented session state management with conversation history tracking
+
+### Challenge 2: Dynamic Question Generation
+**Problem**: Creating relevant technical questions for diverse tech stacks
+**Solution**: Designed flexible prompt templates with technology-specific question banks
+
+### Challenge 3: Data Privacy
+**Problem**: Handling sensitive candidate information securely
+**Solution**: Local-only storage with optional data anonymization features
+
+### Challenge 4: User Experience
+**Problem**: Creating intuitive interaction flow
+**Solution**: Step-by-step guided conversation with clear prompts and feedback
 
 ---
 
