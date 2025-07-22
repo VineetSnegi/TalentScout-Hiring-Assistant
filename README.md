@@ -175,21 +175,6 @@ talentscout-hiring-assistant/
     └── run_app.ps1            # PowerShell application launcher
 ```
 
-### **Technology Stack**
-
-- **Frontend**: Streamlit with custom CSS and animations
-- **AI Engine**: Google Gemini Pro for natural language processing
-- **Data Storage**: JSON-based candidate database
-- **Performance**: Async processing with intelligent caching
-- **Deployment**: Multi-platform cloud deployment ready
-
-### Technology Stack
-- **Frontend**: Streamlit with custom CSS styling
-- **Backend**: Python with modular architecture
-- **AI Engine**: Google Gemini Pro (gemini-1.5-flash)
-- **Data Storage**: JSON-based file system
-- **Styling**: Custom CSS with modern design principles
-
 ## Installation
 
 ### Prerequisites
@@ -238,10 +223,11 @@ talentscout-hiring-assistant/
 - **`config.py`**: Configuration and constants
 
 ### Technology Stack
-- **Frontend**: Streamlit
-- **AI Model**: Google Gemini AI
-- **Language**: Python 3.8+
-- **Data Storage**: JSON (simulated/local)
+- **Frontend**: Streamlit with custom CSS styling
+- **Backend**: Python with modular architecture
+- **AI Engine**: Google Gemini Pro (gemini-1.5-flash)
+- **Data Storage**: JSON-based file system
+- **Styling**: Custom CSS with modern design principles
 
 ## Prompt Engineering
 
@@ -302,20 +288,6 @@ talentscout-hiring-assistant/
 - **Error Handling**: Robust exception management
 - **Type Hints**: Python type annotations for clarity
 - **Best Practices**: PEP 8 compliance and clean code principles
-
-## Project Structure
-```
-AI Assignment/
-├── app.py                 # Main Streamlit application
-├── chatbot.py            # Chatbot logic and AI integration
-├── data_handler.py       # Data management utilities
-├── config.py             # Configuration settings
-├── requirements.txt      # Python dependencies
-├── .env                  # Environment variables (not in repo)
-├── README.md            # This file
-└── data/                # Local data storage
-    └── candidates.json  # Candidate information (auto-created)
-```
 
 ## Challenges & Solutions
 
