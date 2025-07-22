@@ -53,7 +53,7 @@ https://talentscout-hiring-assistant-[random-id].streamlit.app/
 
 ---
 
-## 🔧 **Configuration Requirements**
+## **Configuration Requirements**
 
 ### **Environment Variables**
 Your app needs these environment variables in Streamlit Cloud:
@@ -71,7 +71,7 @@ GOOGLE_API_KEY = "your_google_ai_api_key"
 
 ---
 
-## 🎯 **Deployment Commands**
+## **Deployment Commands**
 
 ### **If you need to update your repository:**
 
@@ -106,24 +106,24 @@ git push origin main
 
 ---
 
-## 📊 **Expected Deployment Results**
+## **Expected Deployment Results**
 
 ### **What you'll get:**
-- ✅ **Live Application**: Fully functional hiring assistant
-- ✅ **Custom URL**: Professional-looking app URL
-- ✅ **Automatic Updates**: App updates when you push to GitHub
-- ✅ **Free Hosting**: No cost for deployment
-- ✅ **SSL Certificate**: Secure HTTPS connection
+- **Live Application**: Fully functional hiring assistant
+- **Custom URL**: Professional-looking app URL
+- **Automatic Updates**: App updates when you push to GitHub
+- **Free Hosting**: No cost for deployment
+- **SSL Certificate**: Secure HTTPS connection
 
 ### **Performance:**
-- ⚡ **Fast Loading**: Optimized for quick startup
-- 🔄 **Auto-scaling**: Handles multiple users
-- 💾 **Persistent Data**: Candidate data saved between sessions
-- 📱 **Mobile Friendly**: Responsive design works on all devices
+- **Fast Loading**: Optimized for quick startup
+- **Auto-scaling**: Handles multiple users
+- **Persistent Data**: Candidate data saved between sessions
+- **Mobile Friendly**: Responsive design works on all devices
 
 ---
 
-## 🎉 **After Deployment**
+## **After Deployment**
 
 ### **Test Your Live App:**
 1. Visit your Streamlit Cloud URL
@@ -132,14 +132,14 @@ git push origin main
 4. Check data is saved properly
 
 ### **Share Your Success:**
-- 📧 **Email the URL** to demonstrate your project
-- 📱 **Social Media**: Share your AI hiring assistant
-- 📋 **Resume**: Add the live demo link
-- 🎓 **Assignment**: Submit the live URL
+- **Email the URL** to demonstrate your project
+- **Social Media**: Share your AI hiring assistant
+- **Resume**: Add the live demo link
+- **Assignment**: Submit the live URL
 
 ---
 
-## 🛠️ **Troubleshooting**
+## **Troubleshooting**
 
 ### **Common Issues:**
 
@@ -158,7 +158,7 @@ git push origin main
 
 ---
 
-## 🎯 **Your Deployment Checklist**
+## **Your Deployment Checklist**
 
 - [ ] GitHub repository is updated with latest code
 - [ ] Google AI API key is ready
@@ -171,7 +171,7 @@ git push origin main
 
 ---
 
-**🚀 Ready to deploy? Your TalentScout Hiring Assistant is about to go live!**
+**Ready to deploy? Your TalentScout Hiring Assistant is about to go live!**
 
 **Repository**: https://github.com/VineetSnegi/TalentScout-Hiring-Assistant
 **Deployment Platform**: Streamlit Cloud

@@ -183,25 +183,6 @@ talentscout-hiring-assistant/
 - **Performance**: Async processing with intelligent caching
 - **Deployment**: Multi-platform cloud deployment ready
 
-### Project Structure
-```
-TalentScout/
-├── app.py                      # Main Streamlit application
-├── src/
-│   ├── core/                   # Business logic
-│   │   ├── chatbot.py         # AI chatbot implementation
-│   │   ├── data_handler.py    # Data storage and retrieval
-│   │   └── config.py          # Application configuration
-│   └── ui/                     # User interface components
-│       ├── styles.py          # CSS styling and themes
-│       ├── ui_components.py   # Reusable UI components
-│       ├── sidebar.py         # Sidebar functionality
-│       └── progress.py        # Progress tracking
-├── data/                       # Data storage
-│   └── candidates.json        # Candidate information
-└── requirements.txt           # Python dependencies
-```
-
 ### Technology Stack
 - **Frontend**: Streamlit with custom CSS styling
 - **Backend**: Python with modular architecture
