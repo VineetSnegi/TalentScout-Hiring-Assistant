@@ -337,10 +337,3 @@ This project was developed as part of an AI/ML internship assignment. For questi
 ## License
 
 This project is developed for educational and assignment purposes.
-
----
-
-**Developer**: AI/ML Intern Candidate  
-**Assignment**: TalentScout Hiring Assistant  
-**Timeline**: 48 Hours  
-**Status**: Complete
