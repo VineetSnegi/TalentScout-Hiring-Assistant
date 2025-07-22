@@ -122,7 +122,7 @@ docker run -p 8501:8501 -e GOOGLE_API_KEY=your_api_key talentscout
 
 ### **For Candidates**
 
-1. **Start Interview** - Click "Start My Interview" to begin
+1. **Start Interview** - Click "START MY INTERVIEW" to begin
 2. **Provide Information** - Share your basic details naturally
 3. **Discuss Tech Stack** - Talk about your technical preferences
 4. **Answer Questions** - Engage with AI-generated technical questions

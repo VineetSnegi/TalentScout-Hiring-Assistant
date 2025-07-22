@@ -32,7 +32,7 @@ def display_instructions():
                 <span style="background: #2563eb; color: white; border-radius: 50%; 
                              width: 24px; height: 24px; display: inline-flex; align-items: center; 
                              justify-content: center; margin-right: 0.75rem; font-size: 0.8rem; font-weight: bold;">1</span>
-                Click "Start My Interview" below
+                Click "START MY INTERVIEW" below
             </div>
             <div style="margin-bottom: 0.75rem; display: flex; align-items: center;">
                 <span style="background: #2563eb; color: white; border-radius: 50%; 

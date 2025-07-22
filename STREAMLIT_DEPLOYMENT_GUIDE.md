@@ -1,4 +1,4 @@
-# 🚀 Streamlit Cloud Deployment Guide
+# Streamlit Cloud Deployment Guide
 
 ## **Deploy TalentScout Hiring Assistant to Streamlit Cloud**
 
@@ -6,7 +6,7 @@ Your GitHub repository: **https://github.com/VineetSnegi/TalentScout-Hiring-Assi
 
 ---
 
-## 📋 **Step-by-Step Deployment**
+## **Step-by-Step Deployment**
 
 ### **Step 1: Prepare Your Repository**
 
@@ -127,7 +127,7 @@ git push origin main
 
 ### **Test Your Live App:**
 1. Visit your Streamlit Cloud URL
-2. Click "Start My Interview"
+2. Click "START MY INTERVIEW"
 3. Complete a full interview flow
 4. Check data is saved properly
 

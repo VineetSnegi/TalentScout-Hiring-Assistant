@@ -160,15 +160,13 @@ def display_chat_interface():
     if not st.session_state.conversation_started:
         display_welcome_card()
         
-        # Center the start button for better UX
-        col1, col2, col3 = st.columns([1, 2, 1])
-        with col2:
-            if st.button("🚀 Start My Interview", type="primary", use_container_width=True):
-                # Initialize conversation with AI greeting
-                initial_response = st.session_state.chatbot.process_message("hello")
-                st.session_state.messages.append(("assistant", initial_response))
-                st.session_state.conversation_started = True
-                st.rerun()
+        # Start interview button
+        if st.button("START MY INTERVIEW", type="primary", use_container_width=True):
+            # Initialize conversation with AI greeting
+            initial_response = st.session_state.chatbot.process_message("hello")
+            st.session_state.messages.append(("assistant", initial_response))
+            st.session_state.conversation_started = True
+            st.rerun()
         return
 
     # Main interview interface
