@@ -74,3 +74,4 @@ try {
 Write-Host ""
 Write-Host "👋 Application stopped" -ForegroundColor Yellow
 Read-Host "Press Enter to exit"
+

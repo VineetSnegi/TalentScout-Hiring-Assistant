@@ -239,6 +239,5 @@ def run_all_tests():
         print("   - Set up API key in .env file")
         print("   - Check file permissions")
 
-
 if __name__ == "__main__":
     run_all_tests()
