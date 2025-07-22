@@ -7,7 +7,6 @@ Provides intelligent candidate screening through natural conversation.
 
 Features:
 - AI-powered interview conversation using Google Gemini
-- Real-time sentiment analysis during interviews
 - Progressive interview stages with dynamic questioning
 - Modern, responsive UI with animations
 - Comprehensive candidate data collection and storage
@@ -31,8 +30,7 @@ from src.ui.ui_components import (
     display_chat_message, display_input_section, display_footer
 )
 from src.ui.enhanced_components import (
-    create_sentiment_indicator, create_animated_progress_bar,
-    create_tech_stack_selector, add_page_transitions
+    create_animated_progress_bar, create_tech_stack_selector, add_page_transitions
 )
 from src.ui.sidebar import display_sidebar
 from src.ui.progress import display_candidate_progress
@@ -150,7 +148,6 @@ def display_chat_interface():
     - Welcome screen with start button
     - Chat message history display
     - User input form with send button
-    - Real-time sentiment analysis
     - Conversation completion detection
     - Progress tracking throughout the interview
     """
@@ -186,15 +183,6 @@ def display_chat_interface():
     
     # Get chatbot instance for later use
     chatbot = st.session_state.chatbot
-    
-    # Display sentiment analysis if conversation has started
-    if len(st.session_state.messages) > 2 and chatbot:  # After some conversation
-        with st.expander("📊 Real-time Sentiment Analysis", expanded=False):
-            try:
-                sentiment_data = chatbot.get_current_sentiment()
-                create_sentiment_indicator(sentiment_data)
-            except Exception as e:
-                st.warning(f"Sentiment analysis temporarily unavailable: {e}")
     
     # Check conversation status
     conversation_completed = (chatbot.conversation_stage == "completion")

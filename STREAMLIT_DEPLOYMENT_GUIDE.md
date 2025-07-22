@@ -127,10 +127,9 @@ git push origin main
 
 ### **Test Your Live App:**
 1. Visit your Streamlit Cloud URL
-2. Click "🚀 Start My Interview"
+2. Click "Start My Interview"
 3. Complete a full interview flow
-4. Verify sentiment analysis works
-5. Check data is saved properly
+4. Check data is saved properly
 
 ### **Share Your Success:**
 - 📧 **Email the URL** to demonstrate your project

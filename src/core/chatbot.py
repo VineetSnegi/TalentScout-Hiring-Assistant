@@ -4,12 +4,11 @@ TalentScout Hiring Assistant - Core Chatbot Module
 
 This module contains the main chatbot logic for conducting AI-powered
 hiring interviews. It manages conversation flow, AI interactions,
-sentiment analysis, and candidate data collection.
+and candidate data collection.
 
 Key Features:
 - Multi-stage interview process (greeting → info → tech → questions → completion)
 - Google Gemini AI integration for natural conversation
-- Real-time sentiment analysis during interviews
 - Dynamic question generation based on candidate responses
 - Comprehensive data collection and storage
 
@@ -30,7 +29,6 @@ from .config import (
     MODEL_NAME, MAX_TOKENS, TEMPERATURE, COMPANY_NAME
 )
 from .data_handler import DataHandler
-from .sentiment_analyzer import SentimentAnalyzer
 
 # Load environment variables
 load_dotenv()
@@ -46,27 +44,23 @@ class HiringAssistantChatbot:
     
     Attributes:
         data_handler: Manages candidate data storage and retrieval
-        sentiment_analyzer: Provides real-time sentiment analysis
         conversation_history: Complete record of the conversation
         current_candidate: Current candidate's information
         conversation_stage: Current stage of the interview process
         info_step: Current step in information collection
         tech_questions_generated: Whether technical questions have been created
         session_id: Unique identifier for the current session
-        sentiment_history: Historical sentiment data throughout conversation
     """
     
     def __init__(self):
         """Initialize the chatbot with all necessary components."""
         self.data_handler = DataHandler()
-        self.sentiment_analyzer = SentimentAnalyzer()
         self.conversation_history = []
         self.current_candidate = {}
         self.conversation_stage = "greeting"
         self.info_step = "name"  # Start with name collection
         self.tech_questions_generated = False
         self.session_id = None
-        self.sentiment_history = []
         
         # Initialize Google Gemini AI
         self._initialize_ai()
@@ -446,16 +440,6 @@ Thank you for your interest in {COMPANY_NAME}! Have a great day! 🌟
         if not user_input.strip():
             return "I didn't receive any input. Could you please say something?"
         
-        # Analyze sentiment for candidate responses
-        if self.conversation_stage != "greeting" and user_input.strip():
-            sentiment = self.sentiment_analyzer.analyze_response(user_input)
-            self.sentiment_history.append({
-                'timestamp': datetime.now().isoformat(),
-                'sentiment': sentiment,
-                'user_input': user_input,
-                'stage': self.conversation_stage
-            })
-        
         # Check for exit intent
         if self._check_exit_intent(user_input):
             return self._handle_exit()
@@ -507,23 +491,6 @@ Have a great day! 👋
     def get_candidate_info(self) -> Dict:
         """Return current candidate information"""
         return self.current_candidate.copy()
-    
-    def get_current_sentiment(self) -> Dict[str, Any]:
-        """Get the most recent sentiment analysis"""
-        if not self.sentiment_history:
-            return {
-                'confidence_level': '50%',
-                'primary_emotion': 'Neutral',
-                'overall_sentiment': 'Neutral',
-                'engagement': 'Medium'
-            }
-        
-        latest_sentiment = self.sentiment_history[-1]['sentiment']
-        return self.sentiment_analyzer.get_sentiment_summary(latest_sentiment)
-    
-    def get_sentiment_history(self) -> List[Dict]:
-        """Get complete sentiment history"""
-        return self.sentiment_history.copy()
     
     def reset_conversation(self) -> None:
         """Reset conversation state for new session"""

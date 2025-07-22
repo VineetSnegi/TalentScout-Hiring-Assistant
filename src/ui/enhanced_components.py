@@ -212,108 +212,6 @@ def create_tech_stack_selector() -> List[str]:
     
     return selected_tech
 
-def create_sentiment_indicator(sentiment_data: Dict[str, Any]) -> None:
-    """Create a real-time sentiment indicator"""
-    
-    confidence = sentiment_data.get('confidence_level', '50%')
-    emotion = sentiment_data.get('primary_emotion', 'Neutral')
-    engagement = sentiment_data.get('engagement', 'Medium')
-    
-    sentiment_css = f"""
-    <style>
-    .sentiment-dashboard {{
-        background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
-        border-radius: 12px;
-        padding: 20px;
-        margin: 15px 0;
-        border: 1px solid #E2E8F0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    }}
-    
-    .sentiment-header {{
-        font-weight: 600;
-        color: #1E293B;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }}
-    
-    .sentiment-metrics {{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 15px;
-    }}
-    
-    .metric-card {{
-        background: white;
-        padding: 12px;
-        border-radius: 8px;
-        border-left: 4px solid #2563EB;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    }}
-    
-    .metric-label {{
-        font-size: 12px;
-        color: #64748B;
-        text-transform: uppercase;
-        font-weight: 500;
-        margin-bottom: 4px;
-    }}
-    
-    .metric-value {{
-        font-size: 16px;
-        font-weight: 600;
-        color: #1E293B;
-    }}
-    
-    .confidence-high {{ border-left-color: #10B981; }}
-    .confidence-medium {{ border-left-color: #F59E0B; }}
-    .confidence-low {{ border-left-color: #EF4444; }}
-    
-    .emotion-indicator {{
-        display: inline-block;
-        padding: 4px 8px;
-        border-radius: 12px;
-        font-size: 12px;
-        font-weight: 500;
-        text-transform: uppercase;
-    }}
-    
-    .emotion-confident {{ background: #DCFCE7; color: #166534; }}
-    .emotion-nervous {{ background: #FEF2F2; color: #991B1B; }}
-    .emotion-excited {{ background: #FEF3C7; color: #92400E; }}
-    .emotion-neutral {{ background: #F1F5F9; color: #475569; }}
-    </style>
-    
-    <div class="sentiment-dashboard">
-        <div class="sentiment-header">
-            🎭 <span>Candidate Sentiment Analysis</span>
-        </div>
-        
-        <div class="sentiment-metrics">
-            <div class="metric-card confidence-{'high' if '7' in confidence or '8' in confidence or '9' in confidence else 'medium' if '5' in confidence or '6' in confidence else 'low'}">
-                <div class="metric-label">Confidence Level</div>
-                <div class="metric-value">{confidence}</div>
-            </div>
-            
-            <div class="metric-card">
-                <div class="metric-label">Primary Emotion</div>
-                <div class="metric-value">
-                    <span class="emotion-indicator emotion-{emotion.lower()}">{emotion}</span>
-                </div>
-            </div>
-            
-            <div class="metric-card">
-                <div class="metric-label">Engagement</div>
-                <div class="metric-value">{engagement}</div>
-            </div>
-        </div>
-    </div>
-    """
-    
-    st.markdown(sentiment_css, unsafe_allow_html=True)
-
 def create_voice_input_component() -> Optional[str]:
     """Create a voice input component (placeholder for future implementation)"""
     
@@ -558,14 +456,6 @@ if __name__ == "__main__":
     
     # Test tech stack selector
     selected_tech = create_tech_stack_selector()
-    
-    # Test sentiment indicator
-    test_sentiment = {
-        'confidence_level': '78%',
-        'primary_emotion': 'Confident',
-        'engagement': 'High'
-    }
-    create_sentiment_indicator(test_sentiment)
     
     # Test voice input
     create_voice_input_component()

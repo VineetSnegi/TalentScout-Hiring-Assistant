@@ -1,7 +1,7 @@
-# 🏆 TalentScout Hiring Assistant
+# TalentScout Hiring Assistant
 
 > **AI-Powered Candidate Screening Platform**  
-> *Revolutionizing the hiring process with intelligent conversation and sentiment analysis*
+> *Revolutionizing the hiring process with intelligent conversation and modern technology*
 
 <div align="center">
 
@@ -14,44 +14,42 @@
 
 ---
 
-## 📋 **Table of Contents**
+## Table of Contents
 
-- [🎯 Overview](#-overview)
-- [✨ Features](#-features)
-- [🚀 Quick Start](#-quick-start)
-- [🛠️ Installation](#%EF%B8%8F-installation)
-- [📖 Usage Guide](#-usage-guide)
-- [🏗️ Architecture](#%EF%B8%8F-architecture)
-- [🌐 Deployment](#-deployment)
-- [📚 Documentation](#-documentation)
+- [Overview](#overview)
+- [Features](#features)
+- [Quick Start](#quick-start)
+- [Installation](#installation)
+- [Usage Guide](#usage-guide)
+- [Architecture](#architecture)
+- [Deployment](#deployment)
+- [Documentation](#documentation)
 
 ---
 
-## 🎯 **Overview**
+## Overview
 
 TalentScout is a comprehensive AI-powered hiring assistant that transforms traditional candidate screening into an intelligent, conversational experience. Built with cutting-edge technologies, it provides HR teams with deep insights into candidate capabilities while ensuring a smooth, professional interview process.
 
 ### **What Makes TalentScout Special?**
 
-- 🤖 **AI-Driven Conversations** - Natural, adaptive interviews using Google Gemini
-- 📊 **Real-Time Sentiment Analysis** - Understand candidate engagement and confidence
-- 🎨 **Modern UI/UX** - Professional interface with smooth animations
-- ⚡ **Performance Optimized** - Async processing and intelligent caching
-- 🌐 **Cloud-Ready** - Deploy to multiple platforms with one click
+- **AI-Driven Conversations** - Natural, adaptive interviews using Google Gemini
+- **Modern UI/UX** - Professional interface with smooth animations
+- **Performance Optimized** - Async processing and intelligent caching
+- **Cloud-Ready** - Deploy to multiple platforms with one click
 
 ---
 
-## ✨ **Features**
+## Features
 
-### **🔥 Core Features**
+### **Core Features**
 - **Intelligent Interview Flow** - Multi-stage conversation management
 - **Dynamic Question Generation** - Adaptive technical questions based on responses
 - **Comprehensive Data Collection** - Structured candidate information gathering
 - **Real-Time Progress Tracking** - Visual interview progression indicators
 - **Professional UI** - Modern design with CSS animations and transitions
 
-### **🚀 Bonus Features (25+ Implemented)**
-- **Sentiment Analysis Engine** - Real-time emotion and confidence detection
+### **Bonus Features**
 - **Performance Optimization** - Response caching and async processing
 - **Enhanced UI Components** - Animated progress bars and interactive elements
 - **Tech Stack Selector** - Visual technology preference selection
@@ -62,7 +60,7 @@ TalentScout is a comprehensive AI-powered hiring assistant that transforms tradi
 
 ---
 
-## 🚀 **Quick Start**
+## Quick Start
 
 ### **Prerequisites**
 - Python 3.8 or higher
@@ -86,11 +84,11 @@ cp .env.example .env
 streamlit run app.py
 ```
 
-🎉 **That's it!** Your hiring assistant is now running at `http://localhost:8501`
+**That's it!** Your hiring assistant is now running at `http://localhost:8501`
 
 ---
 
-## 🛠️ **Installation**
+## Installation
 
 ### **Method 1: Standard Installation**
 
@@ -120,11 +118,11 @@ docker run -p 8501:8501 -e GOOGLE_API_KEY=your_api_key talentscout
 
 ---
 
-## 📖 **Usage Guide**
+## Usage Guide
 
 ### **For Candidates**
 
-1. **Start Interview** - Click "🚀 Start My Interview" to begin
+1. **Start Interview** - Click "Start My Interview" to begin
 2. **Provide Information** - Share your basic details naturally
 3. **Discuss Tech Stack** - Talk about your technical preferences
 4. **Answer Questions** - Engage with AI-generated technical questions
@@ -133,13 +131,12 @@ docker run -p 8501:8501 -e GOOGLE_API_KEY=your_api_key talentscout
 ### **For HR Teams**
 
 1. **Monitor Progress** - Track candidate progression in real-time
-2. **View Sentiment Analysis** - Understand candidate engagement levels
-3. **Access Data** - Review structured candidate profiles in `data/candidates.json`
-4. **Export Results** - Download comprehensive interview reports
+2. **Access Data** - Review structured candidate profiles in `data/candidates.json`
+3. **Export Results** - Download comprehensive interview reports
 
 ---
 
-## 🏗️ **Architecture**
+## Architecture
 
 ### **Project Structure**
 
@@ -154,7 +151,6 @@ talentscout-hiring-assistant/
 │   │   ├── chatbot.py         # Main AI chatbot implementation
 │   │   ├── config.py          # Application configuration
 │   │   ├── data_handler.py    # Data management and storage
-│   │   ├── sentiment_analyzer.py  # Sentiment analysis engine
 │   │   └── performance_optimizer.py  # Performance enhancements
 │   └── ui/                    # User interface components
 │       ├── styles.py          # CSS styling and themes
@@ -183,7 +179,6 @@ talentscout-hiring-assistant/
 
 - **Frontend**: Streamlit with custom CSS and animations
 - **AI Engine**: Google Gemini Pro for natural language processing
-- **Sentiment Analysis**: Custom implementation with emotion detection
 - **Data Storage**: JSON-based candidate database
 - **Performance**: Async processing with intelligent caching
 - **Deployment**: Multi-platform cloud deployment ready
@@ -214,7 +209,7 @@ TalentScout/
 - **Data Storage**: JSON-based file system
 - **Styling**: Custom CSS with modern design principles
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -284,37 +279,29 @@ TalentScout/
 - Natural conversation flow maintenance
 - Fallback mechanisms for unexpected inputs
 
-## 🎉 Bonus Features Implemented
+## Bonus Features Implemented
 
-### 1. **Real-time Sentiment Analysis** ✨
-- **Emotion Detection**: Analyzes candidate emotions (confident, nervous, excited, neutral)
-- **Confidence Scoring**: Real-time confidence level assessment (0-100%)
-- **Stress Indicators**: Detects hesitation patterns and uncertainty markers
-- **Adaptive Responses**: AI adjusts tone based on candidate sentiment
-- **Visual Dashboard**: Live sentiment metrics display during interview
-
-### 2. **Enhanced Performance Optimization** ⚡
+### 1. **Enhanced Performance Optimization**
 - **Async Processing**: Non-blocking response generation for better UX
 - **Intelligent Caching**: Response caching system with TTL (Time-To-Live)
 - **Pre-loaded Question Bank**: Common technical questions cached for instant access
 - **Performance Monitoring**: Real-time metrics tracking (response times, cache hit rates)
 - **Memory Optimization**: Efficient data handling with minimal overhead
 
-### 3. **Advanced UI/UX Components** 🎨
+### 2. **Advanced UI/UX Components**
 - **Animated Progress Bars**: Smooth, gradient progress indicators with step visualization
 - **Interactive Tech Stack Selector**: Chip-based technology selection with categories
 - **Enhanced Chat Input**: Modern input styling with focus animations
 - **Smooth Page Transitions**: CSS animations for professional feel
-- **Sentiment Indicators**: Real-time emotional state visualization
 - **Export Functionality**: Download interview summaries as JSON
 
-### 4. **Cloud Deployment Ready** ☁️
+### 3. **Cloud Deployment Ready**
 - **Multi-platform Support**: Deployment scripts for Streamlit Cloud, Heroku, Google Cloud Run, AWS EC2
 - **Docker Configuration**: Complete containerization with docker-compose.yml
 - **Environment Management**: Production-ready configuration handling
 - **Security Best Practices**: Secure API key management and HTTPS readiness
 
-### 5. **Developer Experience Enhancements** 🛠️
+### 4. **Developer Experience Enhancements**
 - **Modular Architecture**: Clean separation of concerns across multiple modules
 - **Type Safety**: Comprehensive type hints throughout codebase
 - **Performance Decorators**: Built-in performance monitoring utilities
@@ -377,7 +364,6 @@ AI Assignment/
 
 ## Future Enhancements
 
-- **Sentiment Analysis**: Gauge candidate emotions during conversation
 - **Multilingual Support**: Support for multiple languages
 - **Advanced UI**: Enhanced styling and interactive elements
 - **Cloud Deployment**: AWS/GCP deployment options
